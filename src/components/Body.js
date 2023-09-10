@@ -1,10 +1,13 @@
 import React from 'react'
 import Sidebar from './Sidebar'
+import Maincontainer from './Maincontainer'
+import Buttonlist from './Buttonlist'
 
 const Body = () => {
   return (
-    <div>
+    <div className='flex'>
       <Sidebar/>
+      <Maincontainer/>
     </div>
   )
 }
