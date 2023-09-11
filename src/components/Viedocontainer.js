@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import YOUTUBE_API_URL from "./utils/Conts"
 import Viedocard from './Viedocard';
+import { Link } from 'react-router-dom';
 
 const Viedocontainer = () => {
 
@@ -20,7 +21,7 @@ const Viedocontainer = () => {
     
     <div className='flex flex-wrap justify-center'>
        {
-        videos.map(viedo => <Viedocard info={viedo}/>)
+        videos.map(viedo => <Link to={"watch?v="+viedo.id} key={viedo.id}><Viedocard info={viedo}/></Link>)
        }
     </div>
   )

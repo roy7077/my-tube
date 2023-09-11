@@ -8,9 +8,12 @@ const Cartslice= createSlice({
     reducers:{
         toggelMenu:(state)=>{
             state.isMenuOpen=(!state.isMenuOpen);
-        }
+        },
+        closeMenu:(state)=>{
+            state.isMenuOpen=false;
+        },
     }
 })
 
-export const{toggelMenu}=Cartslice.actions;
+export const{toggelMenu ,closeMenu}=Cartslice.actions;
 export default Cartslice.reducer;
