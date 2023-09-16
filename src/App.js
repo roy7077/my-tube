@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         // loader: teamLoader,
       },
       {
-        path: "watch",
+        path: "watch ",
         element: <Watchlist />,
       }
     ],

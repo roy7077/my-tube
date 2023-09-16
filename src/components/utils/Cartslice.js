@@ -4,6 +4,7 @@ const Cartslice= createSlice({
     name:"cart",
     initialState:{
         isMenuOpen:true,
+        name:"honeysing",
     },
     reducers:{
         toggelMenu:(state)=>{
@@ -12,8 +13,11 @@ const Cartslice= createSlice({
         closeMenu:(state)=>{
             state.isMenuOpen=false;
         },
+        setname:(state,action)=>{
+            state.name=action.payload;
+        }
     }
 })
 
-export const{toggelMenu ,closeMenu}=Cartslice.actions;
+export const{toggelMenu ,closeMenu,setname}=Cartslice.actions;
 export default Cartslice.reducer;

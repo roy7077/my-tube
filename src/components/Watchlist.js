@@ -12,7 +12,7 @@ const Watchlist = () => {
      dispatch(closeMenu()) ;
     },[])
 
-    
+    //console.log(searchParams.get("v"));
   return (
     <div className='p-2 m-2 cursor-pointer'>
       <iframe 
